@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Skin Advisor</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<body>
+
+  <div class="container">
+<img 
+  src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+  width="80"
+  alt="AI Avatar">
+    <h1>AI Skin Advisor</h1>
+
+    <p>Describe your skin problem and get AI skincare advice instantly.</p>
+
+<div class="toggle-container">
+  <label class="switch">
+    <input type="checkbox" onclick="toggleDarkMode()">
+    <span class="slider"></span>
+  </label>
+</div>
+    <textarea 
+      id="problem"
+      placeholder="Example: I have acne and oily skin...">
+    </textarea>
+
+    <br>
+
+    <button onclick="getAdvice()">
+      Get AI Advice
+    </button>
+
+    <div id="result"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
