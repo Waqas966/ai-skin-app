@@ -4,7 +4,7 @@ async function getAdvice()
   const input = document.getElementById("problem").value;
 
   document.getElementById("result").innerHTML =
-  "<span class='loading'>AI is thinking...</span>";
+  "<span class='loading'>✨ AI is analyzing your skin...</span>";
 
   try {
 
@@ -26,7 +26,8 @@ async function getAdvice()
 
     const result = data.choices[0].message.content;
 
-    document.getElementById("result").innerText = result;
+    document.getElementById("result").innerHTML =
+      result.replace(/\n/g, "<br>");
 
   } catch (error) {
 
@@ -38,6 +39,7 @@ async function getAdvice()
   }
 
 }
+
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }

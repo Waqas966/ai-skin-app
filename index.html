@@ -16,7 +16,11 @@
   src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
   width="80"
   alt="AI Avatar">
-    <h1>AI Skin Advisor</h1>
+    <h1>✨ AI Skin Advisor</h1>
+
+<p class="subtitle">
+Smart AI-powered skincare recommendations
+</p>
 
     <p>Describe your skin problem and get AI skincare advice instantly.</p>
 
@@ -26,6 +30,25 @@
     <span class="slider"></span>
   </label>
 </div>
+<input type="email"
+id="email"
+placeholder="Enter Email">
+
+<input type="password"
+id="password"
+placeholder="Enter Password">
+
+<button onclick="signup()">
+Sign Up
+</button>
+
+<button onclick="login()">
+Login
+</button>
+
+<button onclick="logout()">
+Logout
+</button>
     <textarea 
       id="problem"
       placeholder="Example: I have acne and oily skin...">
@@ -39,9 +62,27 @@
 
     <div id="result"></div>
 
+    <div class="about">
+
+<h2>About This Project</h2>
+
+<p>
+AI Skin Advisor is a smart skincare assistant
+built using HTML, CSS, JavaScript, Node.js,
+Firebase, and AI APIs.
+
+It provides personalized skincare guidance
+based on user skin concerns.
+</p>
+
+</div>
+
   </div>
 
   <script src="script.js"></script>
-
+<script type="module" src="auth.js"></script>
+<footer>
+  Created by Waqas Ahmad 🚀
+</footer>
 </body>
 </html>

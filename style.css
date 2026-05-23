@@ -174,3 +174,52 @@ input:checked + .slider:before {
     opacity: 0.3;
   }
 }
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.subtitle {
+  text-align: center;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.about {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.08);
+}
+
+.about h2 {
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}

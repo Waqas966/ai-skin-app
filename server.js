@@ -32,11 +32,39 @@ app.post("/ai", async (req, res) => {
           model: "llama-3.3-70b-versatile",
 
           messages: [
-            {
-              role: "user",
-              content: `Give skincare advice for: ${userInput}`
-            }
-          ]
+
+  {
+    role: "system",
+    content: `
+You are a professional AI skincare advisor.
+
+Give skincare advice in this format:
+
+🌞 Morning Routine
+🌙 Night Routine
+⚠️ Ingredients to Avoid
+💧 Lifestyle Tips
+
+Keep responses professional and beginner friendly.
+`
+  },
+
+  {
+    role: "user",
+    content: `
+My skin issue:
+${userInput}
+
+Please provide:
+- skin analysis
+- morning routine
+- night routine
+- ingredients to avoid
+- skincare tips
+`
+  }
+
+]
         })
       }
     );
